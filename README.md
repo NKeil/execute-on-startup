@@ -1,6 +1,8 @@
 # execute-on-startup
 Purpose: To execute an arbituary number of files on startup of a Debian based system
 
+## This projct is currently a work in progress
+
 ## Usage
 1. Place all the files you want to run in the 'run' folder with 'run_all.sh' in its parent directory. 
 
