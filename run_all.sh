@@ -1,2 +1,2 @@
 #!/bin/sh
-run-parts --regex '' run
+run-parts --regex '' /home/nick/update/this/directory/execute-on-startup/run
