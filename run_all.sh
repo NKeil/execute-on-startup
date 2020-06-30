@@ -1,2 +1,2 @@
 #!/bin/sh
-run-parts --regex '.*sh$' ./run
+run-parts --regex '' run
