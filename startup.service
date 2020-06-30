@@ -1,0 +1,9 @@
+[Unit]
+Description=Trigger for file execution on startup
+
+[Service]
+Type=simple
+ExecStart=/home/nick/update/this/directory/execute-on-startup/run_all.sh
+
+[Install]
+WantedBy=multi-user.target
