@@ -16,6 +16,8 @@ Purpose: To execute an arbituary number of files on startup of a Debian based sy
    * Each execuatable should include a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) as its first line to insure the correct interpreter is loaded.
    
 ## Systemd
+1. Install systemd if you haven't done so already.
+
 1. Modify the file 'startup.service' to include the **full** path to the file 'run_all.sh'. 
 
 2. Add the correct permissions to the file with `sudo chmod 644 /etc/systemd/system/startup.service`. 
@@ -32,7 +34,7 @@ Purpose: To execute an arbituary number of files on startup of a Debian based sy
 
 #### Modifying the startup execution
 * If it is necessary for your files to be executed after a network connection is established, add the line `After=network.target` following the description. This can also be replaced by any other '.service' file that must be run before execution.
-* More information on '.service' files can be found [here](https://www.freedesktop.org/software/systemd/man/systemd.service.html#)
+* More information on '.service' files can be found [here](https://www.freedesktop.org/software/systemd/man/systemd.service.html#).
 
 ## Further Reference
 * [Primary Reference](https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/)
